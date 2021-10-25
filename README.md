@@ -1,6 +1,6 @@
 [![discord](https://img.shields.io/discord/730998659008823296.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://kutt.it/GrenadeGaming)
-[![ci-build-status](https://img.shields.io/github/workflow/status/moonstar-x/discord-tts-bot/CI?logo=github)](https://github.com/moonstar-x/discord-tts-bot)
-[![open-issues-count](https://img.shields.io/github/issues-raw/moonstar-x/discord-tts-bot?logo=github)](https://github.com/moonstar-x/discord-tts-bot)
+[![ci-build-status](https://img.shields.io/github/workflow/status/moonstar-x/discord-tts-bot/CI?logo=github)](https://github.com/maskiilovmai/TTS-BOT)
+[![open-issues-count](https://img.shields.io/github/issues-raw/moonstar-x/discord-tts-bot?logo=github)](https://github.com/maskiilovmai/TTS-BOT)
 [![docker-image-size](https://img.shields.io/docker/image-size/moonstarx/discord-tts-bot?logo=docker)](https://hub.docker.com/repository/docker/moonstarx/discord-tts-bot)
 [![docker-pulls](https://img.shields.io/docker/pulls/moonstarx/discord-tts-bot?logo=docker)](https://hub.docker.com/repository/docker/moonstarx/discord-tts-bot)
 
