@@ -174,4 +174,4 @@ You can add this bot to your server by clicking the image below:
 
 ## Author
 
-This bot was made by [moonstar-x](https://github.com/moonstar-x).
+This bot was made by [Maskiilov Mai](https://github.com/maskiilovmai).
