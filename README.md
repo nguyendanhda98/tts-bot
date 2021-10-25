@@ -170,7 +170,7 @@ Here's a list of all the supported languages:
 
 You can add this bot to your server by clicking the image below:
 
-[![Invite this bot to your server](https://raw.githubusercontent.com/maskiilovmai/images/main/2021071214444047051.png](https://discord.com/api/oauth2/authorize?client_id=902168707277656064&permissions=8&scope=bot)
+[![Invite this bot to your server](https://raw.githubusercontent.com/maskiilovmai/images/main/2021071214444047051.png)](https://discord.com/api/oauth2/authorize?client_id=902168707277656064&permissions=8&scope=bot)
 
 ## Author
 
