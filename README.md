@@ -23,7 +23,7 @@ To self-host this bot you'll need the following:
 In order to self-host this bot, first you'll need to clone this repository.
 
 ```text
-git clone https://github.com/moonstar-x/discord-tts-bot.git
+git clone https://github.com/maskiilovmai/TTS-BOT.git
 ```
 
 Install the dependencies with:
@@ -90,7 +90,7 @@ The following volumes can be used:
 
 ## Deploying to Heroku
 
-To deploy to Heroku, you can click on the image below and login to your account.
+To deploy to Heroku, you can click on the image below and login to your account. Template used by [moonstar-x](https://github.com/moonstar-x)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/moonstar-x/discord-tts-bot)
 
@@ -173,5 +173,5 @@ You can add this bot to your server by clicking the image below:
 [![Invite this bot to your server](https://raw.githubusercontent.com/maskiilovmai/images/main/2021071214444047051.png)](https://discord.com/api/oauth2/authorize?client_id=902168707277656064&permissions=8&scope=bot)
 
 ## Author
-
+This source code by [moonstar-x/discord-tts-bot](https://github.com/moonstar-x/discord-tts-bot)
 This bot was made by [Maskiilov Mai](https://github.com/maskiilovmai).
