@@ -174,5 +174,4 @@ You can add this bot to your server by clicking the image below:
 
 ## Author
 This source code by [moonstar-x/discord-tts-bot](https://github.com/moonstar-x/discord-tts-bot).
-
 This bot was made by [Maskiilov Mai](https://github.com/maskiilovmai).
