@@ -92,7 +92,7 @@ The following volumes can be used:
 
 To deploy to Heroku, you can click on the image below and login to your account.
 
-Template used by [moonstar-x](https://github.com/moonstar-x)
+Template used by [moonstar-x](https://github.com/moonstar-x):
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/moonstar-x/discord-tts-bot)
 
