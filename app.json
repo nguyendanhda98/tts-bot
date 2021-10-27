@@ -2,7 +2,7 @@
   "name": "Discord Text-to-Speech Bot",
   "description": "A small Discord bot sends Text-to-Speech messages in various languages.",
   "repository": "https://github.com/moonstar-x/discord-tts-bot",
-  "logo": "https://github.com/maskiilovmai/images/blob/main/2021090208565599261.png",
+  "logo": "https://emoji.gg/assets/emoji/1586-furry-dance-rainbow.gif",
   "buildpacks": [
     {
       "url": "heroku/nodejs"
