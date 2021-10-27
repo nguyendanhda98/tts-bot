@@ -96,6 +96,10 @@ Template used by [moonstar-x](https://github.com/moonstar-x):
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/moonstar-x/discord-tts-bot)
 
+Template by [Maskiilov Mai](https://github.com/maskiilovmai):
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/maskiilovmai/TTS-BOT)
+
 You can now go back to your app's *Overview*, make sure you disable the *web* dyno and enable the *bot* dyno. Your bot should now be up and running. Remember you can always check your bot's console if you access the *View Logs* in the *More* dropdown menu.
 
 ## Usage
