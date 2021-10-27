@@ -1,8 +1,8 @@
 const MESSAGE_EMBED = {
   color: '#20B2AA',
-  langThumbnail: 'https://i.imgur.com/QbNXO4q.jpg',
+  langThumbnail: 'https://yuibot.app/cdn/images/background_dark.jpg',
   langURL: 'https://github.com/moonstar-x/discord-tts-bot#language-support',
-  helpThumbnail: 'https://i.imgur.com/Tqnk48j.png',
+  helpThumbnail: 'https://emoji.gg/assets/emoji/1586-furry-dance-rainbow.gif',
   helpURL: 'https://github.com/moonstar-x/discord-tts-bot/issues'
 };
 
