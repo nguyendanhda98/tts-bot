@@ -184,7 +184,7 @@ Languages Support:
 
 ## Add this bot to your server
 
-You can add this bot to your server by clicking the image below:
+You can add Ichigyou bot (created by [Maskiilov Mai](https://github.com/maskiilovmai)) to your server by clicking the image below:
 
 [![Invite this bot to your server](https://raw.githubusercontent.com/maskiilovmai/images/main/Ichigyou.jpg)](https://discord.com/api/oauth2/authorize?client_id=902168707277656064&permissions=8&scope=bot)
 
