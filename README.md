@@ -174,7 +174,13 @@ Here's a list of all the supported languages:
 
 ## Screenshot
 
-<div align="center"><img src="/src/screenshot/help.png"></div><div align="center"><img src="/src/screenshot/lang1.png"></div><div align="center"><img src="/src/screenshot/lang2.png"></div>
+Help Pannel:
+
+<div align="center"><img src="/src/screenshot/help.png"></div>
+
+Languages Support:
+
+<div align="center"><img src="/src/screenshot/lang1.png"></div><div align="center"><img src="/src/screenshot/lang2.png"></div>
 
 ## Add this bot to your server
 
