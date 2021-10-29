@@ -172,6 +172,10 @@ Here's a list of all the supported languages:
 | cmn           | Chinese       |
 | ja            | Japanese      |
 
+## Screenshot
+
+<div align="center"><img src="/src/screenshot/help.png"></div><div align="center"><img src="/src/screenshot/lang1.png"></div><div align="center"><img src="/src/screenshot/lang2.png"></div>
+
 ## Add this bot to your server
 
 You can add this bot to your server by clicking the image below:
