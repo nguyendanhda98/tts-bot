@@ -6,7 +6,7 @@ class LangCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'lang',
-      description: 'Change the TTS language.',
+      description: 'Thay đổi ngôn ngữ TTS.',
       emoji: ':map:',
       group: 'google-tts',
       guildOnly: true
@@ -18,23 +18,23 @@ class LangCommand extends Command {
     const { googleProvider } = message.guild.ttsPlayer;
 
     if (!newLang) {
-      return message.reply(`to set-up the TTS language, run: **${this.client.prefix}lang <lang_code>**
-      To see a list of the available lang codes, run: **${this.client.prefix}langs**.
-      The current language is set to: **${googleProvider.getLang()}**.`);
+      return message.reply(`để thiết lập ngôn ngữ TTS, hãy chạy: **${this.client.prefix}lang <mã ngôn ngữ>**
+      Để xem danh sách các mã ngôn ngữ có sẵn, hãy chạy: **${this.client.prefix}langs**.
+      Ngôn ngữ hiện tại được đặt thành: **${googleProvider.getLang()}**.`);
     }
 
     newLang = newLang.toString().toLowerCase();
 
     try {
       const setLang = googleProvider.setLang(newLang);
-      logger.info(`Guild ${message.guild.name} has changed its language to ${googleProvider.getLang()}.`);
-      return message.reply(`language has been set to **${setLang}**.`);
+      logger.info(`Máy chủ ${message.guild.name} đã thay đổi ngôn ngữ thành ${googleProvider.getLang()}.`);
+      return message.reply(`ngôn ngữ đã được đặt thành **${setLang}**.`);
     } catch (error) {
       if (error instanceof GoogleProviderError) {
         if (error.reason === GoogleProviderError.REASON.invalid) {
-          return message.reply(`invalid language. Type **${this.client.prefix}langs** for a list of available languages.`);
+          return message.reply(`ngôn ngữ không hợp lệ. Nhập **${this.client.prefix}langs** để biết danh sách các ngôn ngữ có sẵn.`);
         } else if (error.reason === GoogleProviderError.REASON.same) {
-          return message.reply(`language is already set to **${googleProvider.getLang()}**.`);
+          return message.reply(`ngôn ngữ đã được đặt thành **${googleProvider.getLang()}**.`);
         }
 
         throw error;

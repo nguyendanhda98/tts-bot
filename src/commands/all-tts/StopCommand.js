@@ -6,7 +6,7 @@ class StopCommand extends Command {
     super(client, {
       name: 'stop',
       aliases: ['leave'],
-      description: 'Stop the TTS bot and leave the channel.',
+      description: 'Dừng bot TTS và rời khỏi kênh thoại.',
       emoji: ':x:',
       group: 'all-tts',
       guildOnly: true
@@ -20,16 +20,16 @@ class StopCommand extends Command {
     const { channel: memberChannel } = message.member.voice;
 
     if (!connection) {
-      return message.reply("I'm not in a voice channel.");
+      return message.reply("Tôi không ở trong kênh thoại.");
     }
 
     if (!memberChannel || channel !== memberChannel) {
-      return message.reply('you need to be in my voice channel to do that.');
+      return message.reply('bạn cần phải ở trong cùng kênh thoại với tôi để sử dụng lệnh này.');
     }
 
     ttsPlayer.stop();
-    logger.info(`Successfully left the voice channel ${channel.name} from guild ${guildName}`);
-    return message.channel.send(`Successfully left the voice channel ${channel}.`);
+    logger.info(`Đã rời khỏi kênh thoại thành công ${channel.name} từ máy chủ ${guildName}`);
+    return message.channel.send(`Đã rời khỏi kênh thoại thành công ${channel}.`);
   }
 }
 

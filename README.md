@@ -116,7 +116,7 @@ Here's a list of all the commands for the bot:
 | $speed \<slow\|normal\> |            | Change the TTS spoken speed (must be either **normal** for normal speed or **slow** for slow speed). |
 | $help                   | $h         | Display a help message with all the available commands.                                              |
 
-> Up until now, these settings are saved in memory, which means if the bot crashes/restarts, all of these settings will go back to default (`Language: English, Speed: normal`).
+> Up until now, these settings are saved in memory, which means if the bot crashes/restarts, all of these settings will go back to default (`Language: Vietnamese, Speed: normal`).
 
 ## Language Support
 
@@ -184,7 +184,7 @@ Languages Support:
 
 ## Add this bot to your server
 
-You can add Ichigyou bot (created by [Maskiilov Mai](https://github.com/maskiilovmai)) to your server by clicking the image below:
+You can add Takagi bot (created by [Maskiilov Mai](https://github.com/maskiilovmai)) to your server by clicking the image below:
 
 [![Invite this bot to your server](https://raw.githubusercontent.com/maskiilovmai/images/main/Ichigyou.jpg)](https://discord.com/api/oauth2/authorize?client_id=902168707277656064&permissions=8&scope=bot)
 

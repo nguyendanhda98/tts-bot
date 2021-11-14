@@ -34,9 +34,9 @@ const client = new ExtendedClient({
   presence: {
     refreshInterval: config.get('PRESENCE_REFRESH_INTERVAL'),
     templates: [
-      '{num_guilds} servers!',
-      '{prefix}help for help.',
-      '{num_members} users!',
+      '{num_guilds} máy chủ!',
+      '{prefix}help để nhận trợ giúp.',
+      '{num_members} người dùng!',
       'up for {uptime}.'
     ]
   }

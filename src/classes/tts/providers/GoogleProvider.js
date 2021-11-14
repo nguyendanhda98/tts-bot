@@ -10,7 +10,7 @@ const languages = require('../../../../data/languages.json');
 class GoogleProvider extends AbstractProvider {
   constructor() {
     super();
-    this.lang = 'en';
+    this.lang = 'vi';
     this.slow = false;
   }
 
@@ -39,16 +39,16 @@ class GoogleProvider extends AbstractProvider {
     const { sentence, extras: { lang, slow } } = payload;
     const speed = slow ? 'slow' : 'normal';
 
-    return `(TTS): Playing googleTTS for ${sentence} with language ${lang} with ${speed} speed in guild ${guild.name}.`;
+    return `(TTS): Đang phát googleTTS cho ${sentence} với ngôn ngữ ${lang} với tốc độ ${speed} trong máy chủ ${guild.name}.`;
   }
 
   setLang(newLang) {
     if (!languages[newLang]) {
-      throw new GoogleProviderError('Invalid language!', GoogleProviderError.REASON.invalid);
+      throw new GoogleProviderError('Ngôn ngữ không hợp lệ!', GoogleProviderError.REASON.invalid);
     }
 
     if (this.lang === newLang) {
-      throw new GoogleProviderError(`Language is already set to ${newLang}!`, GoogleProviderError.REASON.same);
+      throw new GoogleProviderError(`Ngôn ngữ đã được đặt thành ${newLang}!`, GoogleProviderError.REASON.same);
     }
 
     this.lang = newLang;
@@ -61,7 +61,7 @@ class GoogleProvider extends AbstractProvider {
 
   setSpeed(newSpeed) {
     if (newSpeed !== 'normal' && newSpeed !== 'slow') {
-      throw new GoogleProviderError('Invalid speed!', GoogleProviderError.REASON.invalid);
+      throw new GoogleProviderError('Tốc độ không hợp lệ', GoogleProviderError.REASON.invalid);
     }
 
     this.slow = newSpeed === 'slow';

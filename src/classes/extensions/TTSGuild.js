@@ -16,7 +16,7 @@ const GuildExtension = (Guild) => {
       this.disconnectScheduler = client.config.get('DISCONNECT_TIMEOUT') !== null ?
         new Scheduler(client, client.config.get('DISCONNECT_TIMEOUT'), (channel) => {
           channel.leave();
-          logger.warn(`Left ${channel.name} from ${this.name} due to inactivity.`);
+          logger.warn(`Rời khỏi ${channel.name} từ ${this.name} do không hoạt động.`);
         }) :
         null;
     }

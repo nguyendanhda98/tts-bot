@@ -7,7 +7,7 @@ class HelpCommand extends Command {
     super(client, {
       name: 'help',
       aliases: ['h'],
-      description: 'Display a help message with all the available commands.',
+      description: 'Hiển thị thông báo trợ giúp với tất cả các lệnh có sẵn.',
       emoji: ':question:',
       group: 'misc',
       guildOnly: true
@@ -27,7 +27,7 @@ class HelpCommand extends Command {
   run(message) {
     const fields = this.prepareFields();
     const embed = new MessageEmbed()
-      .setTitle('Text-to-Speech Help Message')
+      .setTitle('Thông báo trợ giúp chuyển văn bản thành giọng nói')
       .setColor(MESSAGE_EMBED.color)
       .setThumbnail(MESSAGE_EMBED.helpThumbnail);
 
@@ -36,7 +36,7 @@ class HelpCommand extends Command {
       embed.addField(field.title, field.text);
     }
 
-    embed.addField('Spotted a bug?', `This bot is far from perfect, so in case you found a bug, please report it in this bot's [**GitHub Issues Page**](${MESSAGE_EMBED.helpURL}).`);
+    embed.addField('Phát hiện một lỗi?', `Bot này vẫn có thể xảy ra lỗi, vì vậy trong trường hợp bạn tìm thấy một lỗi, vui lòng báo cáo nó trong bot này [**GitHub Issues Page**](${MESSAGE_EMBED.helpURL}).`);
 
     return message.channel.send(embed);
   }

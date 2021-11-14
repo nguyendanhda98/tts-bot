@@ -8,7 +8,7 @@ class SayCommand extends Command {
     super(client, {
       name: 'say',
       aliases: ['tts', 's'],
-      description: 'Send a TTS message in your voice channel.',
+      description: 'Gửi tin nhắn TTS trong kênh thoại của bạn.',
       emoji: ':speaking_head:',
       group: 'google-tts',
       guildOnly: true
@@ -21,41 +21,41 @@ class SayCommand extends Command {
     const connection = voice ? voice.connection : null;
 
     if (!channel) {
-      return message.reply('you need to be in a voice channel first.');
+      return message.reply('bạn cần trong một kênh thoại trước.');
     }
 
     if (args.length < 1) {
-      return message.reply('you need to specify a message.');
+      return message.reply('bạn cần nhập một nội dung muốn nói.');
     }
 
     if (connection) {
       if (voice.channel !== channel) {
-        return message.reply('you need to be in the same voice channel as me.');
+        return message.reply('bạn cần phải ở trong cùng một kênh thoại với tôi.');
       }
 
       return ttsPlayer.say(args.join(' '), GoogleProvider.NAME);
     }
 
     if (!channel.viewable) {
-      return message.reply('I cannot view your voice channel.');
+      return message.reply('Tôi không thể nhìn thấy kênh thoại của bạn.');
     }
 
     if (!channel.joinable) {
-      return message.reply('I cannot join your voice channel.');
+      return message.reply('Tôi không thể tham gia kênh thoại của bạn.');
     }
 
     if (!channel.speakable) {
-      return message.reply('I cannot speak in your voice channel.');
+      return message.reply('Tôi không thể nói trong kênh thoại của bạn.');
     }
 
     if (channel.full) {
-      return message.reply('Your voice channel is full.');
+      return message.reply('Kênh thoại của bạn đã đầy.');
     }
 
     return channel.join()
       .then(() => {
-        logger.info(`Joined ${channel.name} in ${guildName}.`);
-        message.channel.send(`Joined ${channel}.`);
+        logger.info(`Đã tham gia ${channel.name} trong ${guildName}.`);
+        message.channel.send(`Đã tham gia ${channel}.`);
         return ttsPlayer.say(args.join(' '), GoogleProvider.NAME);
       });
   }
