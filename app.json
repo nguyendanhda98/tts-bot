@@ -40,6 +40,14 @@
       "description": "The time it takes for the bot to leave the channel if inactive (in ms). Can be set to null to disable automatic leaving.",
       "value": "600000",
       "required": false
+    },
+    "DISCORD_PRESENCE_STATUS": {
+      "description": "The status of bot, (online, idle, dnd and invisible)",
+      "required:": true
+    },
+    "DISCORD_PRESENCE_TYPE": {
+      "description": "The type of bot, (PLAYING, LISTENING, WATCHING and STREAMING)",
+      "required:": true
     }
   }
 }

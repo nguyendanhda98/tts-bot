@@ -13,6 +13,8 @@ const config = new ConfigProvider({
     OWNER_ID: null,
     OWNER_REPORTING: false,
     PRESENCE_REFRESH_INTERVAL: 15 * 60 * 1000, // 15 Minutes
+    PRESENCE_STATUS: null,
+    PRESENCE_TYPE: null,
     DISCONNECT_TIMEOUT: 5 * 60 * 1000 // 5 Minutes
   },
   types: {
@@ -21,6 +23,8 @@ const config = new ConfigProvider({
     OWNER_ID: ['string', 'null'],
     OWNER_REPORTING: 'boolean',
     PRESENCE_REFRESH_INTERVAL: ['number', 'null'],
+    PRESENCE_STATUS: 'string',
+    PRESENCE_TYPE: 'string',
     DISCONNECT_TIMEOUT: ['number', 'null']
   }
 });
@@ -32,6 +36,8 @@ const client = new ExtendedClient({
   owner: config.get('OWNER_ID'),
   prefix: config.get('PREFIX'),
   presence: {
+    status: config.get('PRESENCE_STATUS'),
+    type: config.get('PRESENCE_TYPE'),
     refreshInterval: config.get('PRESENCE_REFRESH_INTERVAL'),
     templates: [
       '{num_guilds} máy chủ!',
