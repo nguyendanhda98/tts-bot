@@ -1,8 +1,8 @@
 const MESSAGE_EMBED = {
-  color: 'RANDOM',
+  color: '#20B2AA',
   langThumbnail: 'https://bot.to/wp-content/uploads/2020/09/yui_5f7026379c0ef.png',
   langURL: 'https://github.com/moonstar-x/discord-tts-bot#language-support',
-  helpThumbnail: client.user.displayAvatarURL(),
+  helpThumbnail: 'https://bot.to/wp-content/uploads/2020/09/yui_5f7026379c0ef.png',
   helpURL: 'https://github.com/moonstar-x/discord-tts-bot/issues'
 };
 
